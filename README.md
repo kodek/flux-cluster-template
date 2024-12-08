@@ -30,7 +30,7 @@ The features included will depend on the type of configuration you want to use. 
 > [!NOTE]
 > 1. The included behaviour of Talos is that all nodes are able to run workloads, **including** the controller nodes. **Worker nodes** are therefore **optional**.
 > 2. Do you have 3 or more nodes? It is highly recommended to make 3 of them controller nodes for a highly available control plane.
-> 3. Running the cluster on Proxmox VE? My thoughts and recommendations about that are documented [here](https://onedr0p.github.io/home-ops/notes/proxmox-considerations.html).
+> 3. Running the cluster on Proxmox VE? My thoughts and recommendations about that are documented [here](https://onedr0p.github.io/home-ops/archive/proxmox-considerations.html).
 
 | Role    | Cores    | Memory        | System Disk               |
 |---------|----------|---------------|---------------------------|
@@ -111,7 +111,7 @@ You have two different options for setting up your local workstation.
     task workstation:generic-linux
     ```
 
-4. Setup a Python virual environment by running the following task command.
+4. Setup a Python virtual environment by running the following task command.
 
     📍 _This commands requires Python 3.11+ to be installed._
 
@@ -215,7 +215,7 @@ _Mic check, 1, 2_ - In a few moments applications should be lighting up like Chr
 
 1. Output all the common resources in your cluster.
 
-    📍 _Feel free to use the provided [kubernetes tasks](.taskfiles/Kubernetes/Taskfile.yaml) for validation of cluster resources or continue to get familiar with the `kubectl` and `flux` CLI tools._
+    📍 _Feel free to use the provided [kubernetes tasks](.taskfiles/kubernetes/Taskfile.yaml) for validation of cluster resources or continue to get familiar with the `kubectl` and `flux` CLI tools._
 
     ```sh
     task kubernetes:resources
